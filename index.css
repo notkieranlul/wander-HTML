@@ -64,26 +64,6 @@
   justify-content: center;
 }
  
-.home-container2 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: space-between;
-  flex-direction: column;
-}
- 
-.home-burger-menu {
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
- 
-.home-icon10 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-}
- 
 .home-mobile-menu {
   top: 0px;
   left: 0px;
@@ -106,7 +86,7 @@
   flex-direction: column;
 }
  
-.home-container3 {
+.home-container2 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -127,7 +107,7 @@
   justify-content: center;
 }
  
-.home-icon12 {
+.home-icon1 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
@@ -159,7 +139,7 @@
   margin-bottom: var(--dl-space-space-unit);
 }
  
-.home-container4 {
+.home-container3 {
   flex: 0 0 auto;
   width: auto;
   display: flex;
@@ -176,19 +156,19 @@
   display: flex;
 }
  
-.home-icon14 {
+.home-icon3 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
   margin-right: var(--dl-space-space-twounits);
 }
  
-.home-icon16 {
+.home-icon5 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
   margin-right: var(--dl-space-space-twounits);
 }
  
-.home-icon18 {
+.home-icon7 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
@@ -262,25 +242,9 @@
   color: #573412;
 }
  
-.home-button2 {
-  top: 432px;
-  left: 537px;
-  color: rgb(87, 52, 18);
-  margin: auto;
-  position: absolute;
-  font-size: 20px;
-  align-self: flex-start;
-  text-align: center;
-  font-family: "Poppins";
-  border-color: #573412;
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-inputradius);
-  animation-name: none;
-  animation-delay: 0s;
-  animation-duration: 300ms;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
+.home-button {
+  top: 430px;
+  left: 541px;
 }
  
 .home-description {
@@ -296,7 +260,7 @@
   border-width: 0px;
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
-  justify-content: center;
+  justify-content: flex-start;
 }
  
 .home-image2 {
@@ -357,21 +321,6 @@
 }
  
 .home-image4 {
-  top: 84px;
-  right: -2px;
-  width: 360px;
-  height: 450px;
-  position: absolute;
-  object-fit: cover;
-  animation-name: slideInRight;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-}
- 
-.home-image5 {
   right: -146px;
   width: 615px;
   bottom: 103px;
@@ -592,6 +541,21 @@
   color: #573412;
 }
  
+.home-image5 {
+  top: 84px;
+  right: -2px;
+  width: 360px;
+  height: 450px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: slideInRight;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
 .home-footer {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
@@ -736,14 +700,6 @@
   .home-btn-group {
     display: none;
   }
-  .home-burger-menu {
-    display: flex;
-  }
-  .home-button1 {
-    display: flex;
-    padding: var(--dl-space-space-unit);
-    flex-direction: row;
-  }
   .home-logo1 {
     color: #000000;
   }
@@ -864,14 +820,59 @@
 }
  
 @media(max-width: 479px) {
+  .home-header1 {
+    overflow: hidden;
+  }
   .home-navbar {
+    width: 456px;
+    height: 94px;
     padding: var(--dl-space-space-unit);
     overflow: hidden;
+  }
+  .home-image1 {
+    top: 22px;
+    left: 39px;
+    position: absolute;
   }
   .home-mobile-menu {
     padding: 16px;
   }
   .home-hero {
+    overflow: hidden;
+  }
+  .home-caption1 {
+    left: -75px;
+    bottom: -195px;
+  }
+  .home-header2 {
+    top: 164px;
+    left: 27px;
+    width: 388px;
+    position: absolute;
+    max-width: 100%;
+  }
+  .home-button {
+    top: 298px;
+    left: 74px;
+    width: 276px;
+    padding-left: var(--dl-space-space-halfunit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .home-image2 {
+    overflow: hidden;
+  }
+  .home-image3 {
+    overflow: hidden;
+  }
+  .home-image4 {
+    top: 586px;
+    left: 54px;
+    overflow: hidden;
+  }
+  .home-header4 {
+    overflow: hidden;
+  }
+  .home-image5 {
     overflow: hidden;
   }
   .home-footer {

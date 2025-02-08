@@ -627,6 +627,27 @@
   transform: scaleX(1);
 }
  
+.button-mobile {
+  top: 432px;
+  left: 200px;
+  color: rgb(87, 52, 18);
+  margin: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: flex-start;
+  text-align: center;
+  font-family: "Poppins";
+  border-color: #573412;
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-inputradius);
+  animation-name: none;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
 .Heading {
   font-size: 32px;
   font-family: Inter;
@@ -644,6 +665,10 @@
   text-transform: none;
   text-decoration: none;
 }
+ 
+
+ 
+
  
 @media(max-width: 991px) {
   .thq-grid-4 {
@@ -732,5 +757,13 @@
   }
   .thq-grid-auto-300 {
     grid-template-columns: 1fr;
+  }
+  .button-mobile {
+    top: 267px;
+    left: -4px;
+    width: 479px;
+    position: absolute;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
