@@ -866,8 +866,15 @@
 @media(max-width: 479px) {
   .home-navbar {
     padding: var(--dl-space-space-unit);
+    overflow: hidden;
   }
   .home-mobile-menu {
     padding: 16px;
+  }
+  .home-hero {
+    overflow: hidden;
+  }
+  .home-footer {
+    overflow: hidden;
   }
 }
