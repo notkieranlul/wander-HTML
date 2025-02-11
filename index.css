@@ -88,7 +88,7 @@
 }
  
 .home-caption1 {
-  left: 94px;
+  left: 90px;
   color: rgb(87, 52, 18);
   width: 252px;
   bottom: -241px;
@@ -704,7 +704,6 @@
     overflow: hidden;
   }
   
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
 
 }
