@@ -9,12 +9,26 @@
 <style>
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#marker {
+        background-image: url('/public/images/wander-logo1.png');
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .mapboxgl-popup {
+        max-width: 200px;
+    }
 </style>
 </head>
 <body>
 <div id="map"></div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1Ijoia2VlenkiLCJhIjoiY20zcHNtb2xuMGZ6YjJzc2VvaHdleDJvbCJ9.8JkhFV0AYdyeP7xsi2SehA';
+    const tenderloin = [-122.414193, 37.784028];
+    const soma = [-122.401548, 37.780870];
+    const bayview = [-122.391679, 37.733650];
     const bounds = [
         [-122.66336, 37.492987], // Southwest coordinates
         [-122.250481, 37.871651] // Northeast coordinates
@@ -54,7 +68,53 @@ body { margin: 0; padding: 0; }
             labelLayerId
         );
     });
-    
+
+        // create the popup
+        const popup = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Tenderloin: Crime Rate: High. Characteristics: Dense urban area with significant homeless population and social services. Common Crimes: Violent crimes, drug-related offenses, and property crimes.'
+    );
+
+    // create DOM element for the marker
+    const el = document.createElement('div');
+    el.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el)
+        .setLngLat(tenderloin)
+        .setPopup(popup) // sets a popup on this marker
+        .addTo(map);
+
+
+        // create the popup
+        const popup_soma = new mapboxgl.Popup({ offset: 10 }).setText(
+        'South of Market (SoMa): Crime Rate: High. Characteristics: Mix of residential, commercial, and industrial areas. Common Crimes: Violent crimes and property crimes, especially at night.'
+    );
+
+    // create DOM element for the marker
+    const el2 = document.createElement('div');
+    el2.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el2)
+        .setLngLat(soma)
+        .setPopup(popup_soma) // sets a popup on this marker
+        .addTo(map);
+
+        // create the popup
+        const popup_bayview = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Bayview-Hunters Point: Crime Rate: High. Characteristics: Historically underserved area with ongoing community improvement efforts. Common Crimes: Violent crimes and property crimes.'
+    );
+
+    // create DOM element for the marker
+    const el3 = document.createElement('div');
+    el3.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el3)
+        .setLngLat(bayview)
+        .setPopup(popup_bayview) // sets a popup on this marker
+        .addTo(map);
+
 
     // Add geolocate control to the map.
     map.addControl(
@@ -67,7 +127,9 @@ body { margin: 0; padding: 0; }
             // Draw an arrow next to the location dot to indicate which direction the device is heading.
             showUserHeading: true
         })
+        
     );
+    
 </script>
 
 </body>
