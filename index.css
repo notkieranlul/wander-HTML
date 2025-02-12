@@ -362,8 +362,11 @@
 }
  
 .home-video {
-  width: 320px;
-  height: 180px;
+  left: 494px;
+  width: 948px;
+  bottom: 8px;
+  height: 532px;
+  position: absolute;
 }
  
 .home-footer {
