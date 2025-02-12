@@ -52,12 +52,10 @@
   left: 0px;
   width: 100%;
   height: 100vh;
-  display: flex;
+  display: none;
   padding: 32px;
   z-index: 100;
   position: fixed;
-  transform: translateX(100%);
-  transition: 0.5s;
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
@@ -150,12 +148,12 @@
   border-width: 0px;
   flex-direction: column;
   padding-bottom: var(--dl-space-space-oneandhalfunits);
-  justify-content: flex-start;
+  justify-content: center;
 }
  
 .home-image2 {
   top: 90px;
-  left: -19px;
+  left: -2px;
   width: 360px;
   height: 450px;
   position: absolute;
@@ -169,7 +167,7 @@
 }
  
 .home-image3 {
-  left: -148px;
+  left: -146px;
   width: 615px;
   bottom: 100px;
   height: 335px;
@@ -312,7 +310,7 @@
 .home-header4 {
   top: 869px;
   left: 464px;
-  color: #a7877a;
+  color: rgb(167, 135, 122);
   width: 1006px;
   position: absolute;
   font-size: 50px;
@@ -330,11 +328,28 @@
   animation-timing-function: ease;
 }
  
+.home-image5 {
+  top: 84px;
+  right: -2px;
+  width: 360px;
+  height: 450px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: slideInRight;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
 .home-header5 {
-  top: 797px;
-  left: 465px;
+  top: 803px;
+  left: 450px;
   color: rgb(255, 255, 255);
   width: 1006px;
+  display: block;
+  overflow: hidden;
   position: absolute;
   font-size: 50px;
   max-width: auto;
@@ -353,21 +368,6 @@
  
 .home-text18 {
   color: #573412;
-}
- 
-.home-image5 {
-  top: 84px;
-  right: -2px;
-  width: 360px;
-  height: 450px;
-  position: absolute;
-  object-fit: cover;
-  animation-name: slideInRight;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
 }
  
 .home-navlink2 {
@@ -399,13 +399,10 @@
 }
  
 .home-container2 {
-  width: 1641px;
-  height: 313px;
+  width: 1508px;
+  height: 644px;
   display: block;
-  opacity: 1;
   overflow: hidden;
-  border-color: var(--dl-color-gray-black);
-  border-width: 0px;
 }
  
 .home-container3 {
@@ -536,6 +533,8 @@
     gap: var(--dl-space-space-unit);
   }
   .home-caption1 {
+    left: -58px;
+    bottom: -195px;
     font-size: 10px;
     line-height: 24px;
   }
@@ -589,17 +588,20 @@
     max-width: 70%;
     line-height: 43px;
   }
+  .home-image5 {
+    top: 256px;
+    right: -110px;
+    overflow: hidden;
+    border-radius: var(--dl-radius-radius-buttonradius);
+  }
   .home-header5 {
     font-size: 36px;
     max-width: 70%;
     line-height: 43px;
   }
-  .home-image5 {
-    overflow: hidden;
-  }
   .home-navlink2 {
-    top: 279px;
-    left: 36px;
+    top: 582px;
+    left: 57px;
   }
   .home-description2 {
     gap: var(--dl-space-space-threeunits);
@@ -684,6 +686,10 @@
   .home-image3 {
     overflow: hidden;
   }
+  .home-header3 {
+    top: 5px;
+    right: 56px;
+  }
   .home-image4 {
     top: 586px;
     left: 54px;
@@ -700,10 +706,11 @@
     padding-left: var(--dl-space-space-halfunit);
     padding-right: var(--dl-space-space-unit);
   }
+  .home-container2 {
+    width: 393px;
+    height: 544px;
+  }
   .home-footer {
     overflow: hidden;
   }
-  
-
-
 }

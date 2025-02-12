@@ -121,13 +121,13 @@
   height: 16px;
 }
  
-@media(max-width: 767px) {
+@media(max-width: 430px) {
   .items-element2 {
     align-items: flex-start;
   }
 }
  
-@media(max-width: 479px) {
+@media(max-width: 393px) {
   .items-header1 {
     font-size: 16px;
   }

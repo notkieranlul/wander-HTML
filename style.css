@@ -100,7 +100,6 @@
  
 .teleport-show {
   display: flex !important;
-  transform: translateX(0%) !important;
 }
  
 .social {
@@ -676,7 +675,7 @@
   }
 }
  
-@media(max-width: 767px) {
+@media(max-width: 430px) {
   .button-link {
     padding-top: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-oneandhalfunits);
@@ -719,7 +718,7 @@
   }
 }
  
-@media(max-width: 479px) {
+@media(max-width: 393px) {
   .accordion {
     padding-top: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-oneandhalfunits);

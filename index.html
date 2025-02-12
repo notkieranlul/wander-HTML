@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>wewander</title>
+    <title>wander</title>
     <meta property="og:title" content="wander" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
@@ -25,8 +25,8 @@
         line-height: 1.15;
         color: var(--dl-color-gray-black);
         background: var(--dl-color-gray-white);
-        fill: var(--dl-color-gray-black);
 
+        fill: var(--dl-color-gray-black);
       }
     </style>
     <link
@@ -83,6 +83,8 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -99,8 +101,8 @@
             ></div>
             <a href="index.html" class="home-navlink1">
               <img
-                alt="logo"
-                src="public/images/wander-logo1.png"
+                alt="image"
+                src="public/Images/wander-logo-200h.png"
                 class="home-image1"
               />
             </a>
@@ -111,9 +113,9 @@
           <div class="home-heading1">
             <p class="home-caption1">explore with confidence</p>
           </div>
-          <a href="sf.html" class="home-button button-mobile button">
+          <button type="button" class="home-button button-mobile button">
             start wandering
-          </a>
+          </button>
           <animate-on-reveal
             animation="slideInUp"
             delay="0s"
@@ -130,41 +132,63 @@
           </animate-on-reveal>
         </section>
         <section class="home-description1">
-          <img alt="city1" src="public/images/1-400w.jpeg" class="home-image2" />
-          <img alt="city3" src="public/images/3-700w.jpeg" class="home-image3" />
+          <img
+            alt="image"
+            src="public/Images/1-400w.jpeg"
+            class="home-image2"
+          />
+          <img
+            alt="image"
+            src="public/Images/3-700w.jpeg"
+            class="home-image3"
+          />
           <h1 class="home-header3">
             <span class="home-text14">new cities can be</span>
             <span></span>
             <span class="home-text16">scary</span>
             <span class="home-text17">.</span>
           </h1>
-          <img alt="city4" src="public/images/4-700w.jpeg" class="home-image4" />
+          <img
+            alt="image"
+            src="public/Images/4-700w.jpeg"
+            class="home-image4"
+          />
           <p class="home-caption2">“is that area okay to walk through?”</p>
           <p class="home-caption3">— academic wanderer</p>
           <p class="home-caption4">— city wanderer</p>
           <p class="home-caption5">
             “are there any parts i should stay away from?”
           </p>
-          <h1 class="home-header4">wewander</h1>
+          <h1 class="home-header4">wandr</h1>
+          <img
+            alt="image"
+            src="public/Images/2-400w.jpeg"
+            class="home-image5"
+          />
           <h1 class="home-header5">
             <span class="home-text18">explore cities confidently with</span>
             <span></span>
           </h1>
-          <img alt="city2" src="public/images/2-400w.jpeg" class="home-image5" />
           <a href="team.html" class="home-navlink2 button-mobile button">
             meet the team
           </a>
         </section>
         <section class="home-description2">
           <div class="home-container2">
-            <iframe src="map_spin.html"width="1700" height="1700"></iframe>
+            <div class="home-container3">
+              <iframe
+                src="https://wander-wip.vercel.app/map_spin.html"
+                width="1500"
+                height="1000"
+              ></iframe>
+            </div>
           </div>
         </section>
         <footer class="home-footer">
           <div class="home-main">
             <div class="home-branding">
               <div class="home-heading2">
-                <h2 class="home-logo">wewander</h2>
+                <h2 class="home-logo">wander.ai</h2>
                 <p class="home-caption6">making wandering more, safe</p>
               </div>
               <div class="home-socials">
@@ -175,7 +199,7 @@
                   class="home-twitter social button"
                 >
                   <img
-                    alt="twitter"
+                    alt="image"
                     src="public/Icons/twitter.svg"
                     class="home-image6"
                   />
@@ -187,7 +211,7 @@
                   class="home-discord social button"
                 >
                   <img
-                    alt="discord"
+                    alt="image"
                     src="public/Icons/discord.svg"
                     class="home-image7"
                   />
@@ -196,7 +220,7 @@
             </div>
           </div>
           <span class="home-copyright">
-            © 2025 wewander. All Rights Reserved.
+            © 2025 wander.ai. All Rights Reserved.
           </span>
         </footer>
       </div>
@@ -209,9 +233,5 @@
       defer=""
       src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
     ></script>
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>
