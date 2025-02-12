@@ -226,10 +226,10 @@
 }
  
 .team-header4 {
-  top: 167px;
+  top: 170px;
+  left: 618px;
   color: rgb(255, 255, 255);
-  right: 14px;
-  width: 1849px;
+  width: 660px;
   position: absolute;
   font-size: 60px;
   max-width: auto;
@@ -283,104 +283,7 @@
   line-height: 108px;
 }
  
-@media(max-width: 991px) {
-  .team-desktop-menu {
-    display: none;
-  }
-}
- 
 @media(max-width: 430px) {
-  .team-navbar {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-  }
-  .team-image1 {
-    top: 26px;
-    left: 25px;
-    width: 42px;
-    height: 42px;
-  }
-  .team-hero {
-    height: 1167px;
-    padding-top: var(--dl-space-space-threeunits);
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-oneandhalfunits);
-    padding-bottom: var(--dl-space-space-twounits);
-  }
-  .team-image2 {
-    top: 690px;
-    left: 56px;
-    position: absolute;
-  }
-  .team-image3 {
-    top: 207px;
-    left: 47px;
-    position: absolute;
-  }
-  .team-image4 {
-    top: 760px;
-    right: -606px;
-    position: absolute;
-  }
-  .team-image5 {
-    top: 742px;
-    left: 51px;
-    position: absolute;
-  }
-  .team-footer {
-    gap: var(--dl-space-space-oneandhalfunits);
-    padding-top: var(--dl-space-space-fourunits);
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-oneandhalfunits);
-  }
-  .team-main {
-    gap: var(--dl-space-space-threeunits);
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .team-heading {
-    gap: var(--dl-space-space-unit);
-  }
-  .team-logo {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .team-caption {
-    width: 80%;
-    font-size: 12px;
-    line-height: 18px;
-  }
-  .team-header2 {
-    font-size: 36px;
-    max-width: 70%;
-    line-height: 43px;
-  }
-  .team-header3 {
-    font-size: 36px;
-    max-width: 70%;
-    line-height: 43px;
-  }
-  .team-header4 {
-    top: 165px;
-    left: 59px;
-    position: absolute;
-    font-size: 40px;
-    max-width: 70%;
-    line-height: 43px;
-  }
-  .team-header5 {
-    font-size: 36px;
-    max-width: 70%;
-    line-height: 43px;
-  }
-  .team-header6 {
-    font-size: 36px;
-    max-width: 70%;
-    line-height: 43px;
-  }
-}
- 
-@media(max-width: 390px) {
   .team-header1 {
     overflow: hidden;
   }
@@ -404,25 +307,25 @@
     overflow: hidden;
   }
   .team-image2 {
-    top: 680px;
-    left: 33px;
+    top: 694px;
+    left: 53px;
     width: 323px;
     height: 329px;
     position: absolute;
   }
   .team-image3 {
-    top: 221px;
-    left: 33px;
+    top: 235px;
+    left: 53px;
     position: absolute;
   }
   .team-image4 {
-    top: 708px;
-    left: 183px;
+    top: 722px;
+    left: 203px;
     position: absolute;
   }
   .team-image5 {
-    top: 1169px;
-    left: 179px;
+    top: 1181px;
+    left: 203px;
     position: absolute;
   }
   .team-footer {
@@ -439,20 +342,20 @@
     color: rgb(167, 135, 122);
   }
   .team-caption {
-    top: 90px;
-    left: 24px;
+    top: 163px;
+    left: 83px;
     color: rgb(167, 135, 122);
     position: absolute;
   }
   .team-header2 {
-    top: 1101px;
-    left: 58px;
+    top: 1082px;
+    left: 62px;
     position: absolute;
     font-size: 25px;
   }
   .team-header3 {
-    top: 609px;
-    left: 63px;
+    top: 623px;
+    left: 65px;
     color: rgb(167, 135, 122);
     position: absolute;
     font-size: 25px;
@@ -462,9 +365,12 @@
     line-height: 108px;
   }
   .team-header4 {
-    top: 164px;
-    left: 57px;
+    top: 167px;
+    left: -101px;
+    overflow: hidden;
+    position: absolute;
     font-size: 40px;
+    margin-left: 0px;
     animation-name: slideInDown;
     animation-delay: 0s;
     animation-duration: nulls;
@@ -473,8 +379,8 @@
     animation-timing-function: ease;
   }
   .team-header5 {
-    top: 635px;
-    left: 60px;
+    top: 649px;
+    left: 62px;
     color: rgb(167, 135, 122);
     height: 31px;
     position: absolute;
@@ -485,8 +391,8 @@
     line-height: 108px;
   }
   .team-header6 {
-    top: 1128px;
-    left: 53px;
+    top: 1109px;
+    left: 57px;
     height: 35px;
     position: absolute;
     font-size: 15px;
