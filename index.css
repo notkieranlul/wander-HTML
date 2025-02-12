@@ -70,8 +70,6 @@
   max-width: 1440px;
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-sixunits);
   background-color: #eae7e2;
@@ -520,10 +518,13 @@
   }
   .home-hero {
     width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .home-caption1 {
     left: -82px;
     bottom: -142px;
+    height: auto;
     font-size: 15px;
   }
   .home-button {
@@ -538,7 +539,7 @@
     top: 104px;
     right: 0px;
     width: 377px;
-    height: 67px;
+    height: auto;
     font-size: 35px;
     max-width: 100%;
   }
