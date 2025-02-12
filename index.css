@@ -523,8 +523,10 @@
   }
   .home-caption1 {
     left: -82px;
+    right: 48px;
     bottom: -142px;
     height: auto;
+    position: absolute;
     font-size: 15px;
   }
   .home-button {
