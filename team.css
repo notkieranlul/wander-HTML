@@ -147,7 +147,11 @@
   position: relative;
   max-width: 1440px;
   align-items: flex-start;
+  padding-top: 120px;
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
 }
  
 .team-main {
@@ -184,10 +188,10 @@
 }
  
 .team-caption {
-  left: 80px;
+  top: 42px;
+  left: -1px;
   color: #a7877a;
   width: 249px;
-  bottom: 203px;
   position: absolute;
 }
  
@@ -284,14 +288,68 @@
     top: 27px;
     left: 27px;
   }
+  .team-hero {
+    height: 1167px;
+  }
   .team-image2 {
-    top: 695px;
-    left: 28px;
+    top: 720px;
+    left: 54px;
+    bottom: 105px;
     position: absolute;
   }
   .team-image3 {
-    top: 235px;
-    left: 59px;
+    top: 236px;
+    left: 54px;
+    position: absolute;
+  }
+  .team-image4 {
+    top: 748px;
+    left: 205px;
+  }
+  .team-image5 {
+    top: 1222px;
+    left: 205px;
+  }
+  .team-main {
+    height: 228px;
+  }
+  .team-logo {
+    top: 4px;
+    left: -36px;
+    position: absolute;
+  }
+  .team-copyright {
+    left: 84px;
+    bottom: 14px;
+    position: absolute;
+  }
+  .team-caption {
+    top: 166px;
+    left: 46px;
+    position: absolute;
+  }
+  .team-header2 {
+    top: 1122px;
+    left: 67px;
+  }
+  .team-header3 {
+    top: 644px;
+    left: 65px;
+    position: absolute;
+  }
+  .team-header4 {
+    top: 187px;
+    left: -108px;
+    position: absolute;
+    font-size: 40px;
+  }
+  .team-header5 {
+    top: 1152px;
+    left: 67px;
+  }
+  .team-header6 {
+    top: 672px;
+    left: 67px;
     position: absolute;
   }
 }
@@ -361,8 +419,8 @@
     position: absolute;
   }
   .team-caption {
-    top: 69px;
-    left: 38px;
+    top: 52px;
+    left: 40px;
     color: rgb(167, 135, 122);
     position: absolute;
   }
