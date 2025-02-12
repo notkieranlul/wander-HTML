@@ -97,18 +97,6 @@
   line-height: 108px;
 }
  
-.home-text10 {
-  color: #573412;
-}
- 
-.home-text12 {
-  color: #a7877a;
-}
- 
-.home-text13 {
-  color: #573412;
-}
- 
 .home-description1 {
   gap: 120px;
   width: 100%;
@@ -501,16 +489,26 @@
   .home-header2 {
     top: 52px;
     right: 158px;
-    width: 94px;
-    font-size: 35px;
+    width: 104px;
+    font-size: 45px;
     max-width: 100%;
     text-align: left;
+    font-family: Poppins;
     line-height: 40px;
     animation-name: slideInLeft;
     animation-delay: 0s;
     animation-duration: 3s;
     animation-direction: normal;
     animation-timing-function: ease;
+  }
+  .home-text10 {
+    color: #573412;
+  }
+  .home-text12 {
+    color: #a7877a;
+  }
+  .home-text13 {
+    color: #573412;
   }
   .home-image2 {
     top: -6px;
