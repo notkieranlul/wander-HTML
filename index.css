@@ -77,33 +77,6 @@
   background-color: #eae7e2;
 }
  
-.home-heading1 {
-  gap: var(--dl-space-space-twounits);
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-}
- 
-.home-caption1 {
-  left: 90px;
-  color: rgb(87, 52, 18);
-  width: 252px;
-  bottom: -241px;
-  height: 44px;
-  display: block;
-  position: absolute;
-  font-size: 20px;
-  max-width: 800px;
-  align-self: flex-end;
-  font-style: normal;
-  text-align: center;
-  font-family: "Plus Jakarta Sans";
-  font-weight: 200;
-  line-height: 36px;
-  padding-bottom: 0px;
-}
- 
 .home-button {
   top: 430px;
   left: 541px;
@@ -133,6 +106,25 @@
  
 .home-text13 {
   color: #573412;
+}
+ 
+.home-caption1 {
+  left: 90px;
+  color: rgb(87, 52, 18);
+  width: 252px;
+  bottom: -241px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  max-width: 800px;
+  align-self: flex-end;
+  font-style: normal;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 200;
+  line-height: 36px;
+  padding-bottom: 0px;
 }
  
 .home-description1 {
@@ -428,7 +420,7 @@
   flex-direction: column;
 }
  
-.home-heading2 {
+.home-heading {
   gap: var(--dl-space-space-threeunits);
   display: flex;
   position: relative;
@@ -502,11 +494,6 @@
     height: 606px;
     overflow: hidden;
   }
-  .home-caption1 {
-    left: -59px;
-    bottom: -204px;
-    font-size: 10px;
-  }
   .home-button {
     top: 305px;
     left: var(--dl-space-space-halfunit);
@@ -519,6 +506,14 @@
     left: -2px;
     font-size: 35px;
     max-width: 100%;
+  }
+  .home-caption1 {
+    top: 210px;
+    left: 160px;
+    right: 18px;
+    bottom: 339px;
+    position: absolute;
+    font-size: 10px;
   }
   .home-image2 {
     top: -6px;
@@ -625,12 +620,6 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  .home-caption1 {
-    left: -55px;
-    bottom: -130px;
-    height: auto;
-    font-size: 10px;
-  }
   .home-button {
     top: 282px;
     left: 61px;
@@ -646,6 +635,12 @@
     height: auto;
     font-size: 35px;
     max-width: 100%;
+  }
+  .home-caption1 {
+    left: -55px;
+    bottom: -130px;
+    height: auto;
+    font-size: 10px;
   }
   .home-image2 {
     overflow: hidden;
