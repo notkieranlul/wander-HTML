@@ -522,8 +522,9 @@
     width: 100%;
   }
   .home-caption1 {
-    left: -15px;
-    bottom: -163px;
+    left: -82px;
+    bottom: -142px;
+    font-size: 15px;
   }
   .home-button {
     top: 282px;
@@ -534,10 +535,10 @@
     padding-right: var(--dl-space-space-unit);
   }
   .home-header2 {
-    top: 110px;
-    right: -3px;
-    width: 388px;
-    font-size: 30px;
+    top: 104px;
+    right: 0px;
+    width: 377px;
+    font-size: 35px;
     max-width: 100%;
   }
   .home-image2 {
