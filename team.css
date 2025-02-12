@@ -283,6 +283,23 @@
   line-height: 108px;
 }
  
+@media(max-width: 430px) {
+  .team-image1 {
+    top: 27px;
+    left: 27px;
+  }
+  .team-image2 {
+    top: 695px;
+    left: 28px;
+    position: absolute;
+  }
+  .team-image3 {
+    top: 235px;
+    left: 59px;
+    position: absolute;
+  }
+}
+ 
 @media(max-width: 390px) {
   .team-header1 {
     overflow: hidden;
@@ -296,8 +313,6 @@
   .team-image1 {
     top: 26px;
     left: 68px;
-    width: 42px;
-    height: 42px;
   }
   .team-mobile-menu {
     padding: 16px;
@@ -309,8 +324,6 @@
   .team-image2 {
     top: 695px;
     left: 28px;
-    width: 323px;
-    height: 329px;
     position: absolute;
   }
   .team-image3 {
