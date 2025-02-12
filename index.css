@@ -109,15 +109,6 @@
   color: #573412;
 }
  
-.home-text14 {
-  top: 269px;
-  left: 811px;
-  color: #573412;
-  position: absolute;
-  font-size: 20px;
-  font-family: "Poppins";
-}
- 
 .home-description1 {
   gap: 120px;
   width: 100%;
@@ -171,15 +162,15 @@
   animation-timing-function: ease;
 }
  
-.home-text15 {
+.home-text14 {
   color: #573412;
 }
  
-.home-text17 {
+.home-text16 {
   color: #a7877a;
 }
  
-.home-text18 {
+.home-text17 {
   color: #573412;
 }
  
@@ -350,7 +341,7 @@
   animation-timing-function: ease;
 }
  
-.home-text19 {
+.home-text18 {
   color: #573412;
 }
  
@@ -504,18 +495,23 @@
     right: var(--dl-space-space-unit);
     width: 381px;
     position: absolute;
+    animation-name: slideInRight;
+    animation-duration: 2s;
   }
   .home-header2 {
-    top: 170px;
-    left: -2px;
+    top: 52px;
+    right: 158px;
+    width: 94px;
     font-size: 35px;
     max-width: 100%;
-  }
-  .home-text14 {
-    top: 237px;
-    left: 223px;
-    position: absolute;
-    font-size: 10px;
+    text-align: left;
+    line-height: 40px;
+    animation-name: slideInLeft;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
   }
   .home-image2 {
     top: -6px;
