@@ -495,7 +495,7 @@
     right: var(--dl-space-space-unit);
     width: 381px;
     position: absolute;
-    animation-name: slideInRight;
+    animation-name: fadeInUp;
     animation-duration: 2s;
   }
   .home-header2 {
@@ -510,7 +510,6 @@
     animation-delay: 0s;
     animation-duration: 3s;
     animation-direction: normal;
-    animation-iteration-count: 2;
     animation-timing-function: ease;
   }
   .home-image2 {
