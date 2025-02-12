@@ -478,17 +478,16 @@
     overflow: hidden;
   }
   .home-button {
-    top: 305px;
-    left: var(--dl-space-space-unit);
-    right: var(--dl-space-space-unit);
+    top: 395px;
+    left: 24px;
     width: 381px;
     position: absolute;
     animation-name: fadeInUp;
     animation-duration: 2s;
   }
   .home-header2 {
-    top: 52px;
-    right: 158px;
+    top: 61px;
+    left: 161px;
     width: 104px;
     font-size: 45px;
     max-width: 100%;
