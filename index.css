@@ -109,10 +109,10 @@
 }
  
 .home-caption1 {
-  left: 90px;
+  left: 817px;
   color: rgb(87, 52, 18);
   width: 252px;
-  bottom: -241px;
+  bottom: 386px;
   height: 44px;
   display: block;
   position: absolute;
@@ -160,9 +160,10 @@
  
 .home-header3 {
   top: 194px;
+  left: var(--dl-space-space-unit);
   color: rgb(255, 255, 255);
-  right: -25px;
-  width: 100%;
+  right: var(--dl-space-space-unit);
+  width: auto;
   position: absolute;
   font-size: 50px;
   max-width: auto;
@@ -177,6 +178,18 @@
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-timing-function: ease;
+}
+ 
+.home-text14 {
+  color: #573412;
+}
+ 
+.home-text16 {
+  color: #a7877a;
+}
+ 
+.home-text17 {
+  color: #573412;
 }
  
 .home-image3 {
@@ -496,8 +509,8 @@
   }
   .home-button {
     top: 305px;
-    left: var(--dl-space-space-halfunit);
-    right: var(--dl-space-space-halfunit);
+    left: var(--dl-space-space-unit);
+    right: var(--dl-space-space-unit);
     width: 381px;
     position: absolute;
   }
@@ -512,7 +525,6 @@
     left: 160px;
     right: 18px;
     bottom: 339px;
-    position: absolute;
     font-size: 10px;
   }
   .home-image2 {
@@ -524,15 +536,6 @@
     left: -4px;
     font-size: 30px;
     font-family: Poppins;
-  }
-  .home-text14 {
-    color: #573412;
-  }
-  .home-text16 {
-    color: #a7877a;
-  }
-  .home-text17 {
-    color: #573412;
   }
   .home-image3 {
     right: -77px;

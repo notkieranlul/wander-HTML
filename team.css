@@ -145,7 +145,11 @@
   position: relative;
   max-width: 1440px;
   align-items: flex-start;
+  padding-top: 120px;
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
 }
  
 .team-main {
@@ -295,7 +299,6 @@
   .team-image2 {
     top: 720px;
     left: 54px;
-    bottom: 105px;
     position: absolute;
   }
   .team-image3 {
