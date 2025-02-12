@@ -147,11 +147,7 @@
   position: relative;
   max-width: 1440px;
   align-items: flex-start;
-  padding-top: 120px;
-  padding-left: var(--dl-space-space-fiveunits);
-  padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-threeunits);
 }
  
 .team-main {
@@ -344,19 +340,29 @@
   .team-footer {
     width: 100%;
     overflow: hidden;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .team-main {
+    height: 228px;
   }
   .team-logo {
-    top: 0px;
-    left: 0px;
+    left: 38px;
     color: rgb(87, 52, 18);
+    bottom: -62px;
     position: absolute;
   }
   .team-copyright {
+    left: 63px;
     color: rgb(167, 135, 122);
+    bottom: 10px;
+    position: absolute;
   }
   .team-caption {
-    top: 163px;
-    left: 83px;
+    top: 69px;
+    left: 38px;
     color: rgb(167, 135, 122);
     position: absolute;
   }
