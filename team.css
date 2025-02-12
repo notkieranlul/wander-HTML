@@ -283,7 +283,7 @@
   line-height: 108px;
 }
  
-@media(max-width: 430px) {
+@media(max-width: 390px) {
   .team-header1 {
     overflow: hidden;
   }
@@ -307,25 +307,25 @@
     overflow: hidden;
   }
   .team-image2 {
-    top: 694px;
-    left: 53px;
+    top: 695px;
+    left: 28px;
     width: 323px;
     height: 329px;
     position: absolute;
   }
   .team-image3 {
-    top: 235px;
-    left: 53px;
+    top: 236px;
+    left: 28px;
     position: absolute;
   }
   .team-image4 {
-    top: 722px;
-    left: 203px;
+    top: 723px;
+    left: 178px;
     position: absolute;
   }
   .team-image5 {
-    top: 1181px;
-    left: 203px;
+    top: 1182px;
+    left: 178px;
     position: absolute;
   }
   .team-footer {
@@ -348,14 +348,14 @@
     position: absolute;
   }
   .team-header2 {
-    top: 1082px;
-    left: 62px;
+    top: 1083px;
+    left: 37px;
     position: absolute;
     font-size: 25px;
   }
   .team-header3 {
-    top: 623px;
-    left: 65px;
+    top: 624px;
+    left: 40px;
     color: rgb(167, 135, 122);
     position: absolute;
     font-size: 25px;
@@ -365,8 +365,8 @@
     line-height: 108px;
   }
   .team-header4 {
-    top: 167px;
-    left: -101px;
+    top: 169px;
+    left: -134px;
     overflow: hidden;
     position: absolute;
     font-size: 40px;
@@ -379,8 +379,8 @@
     animation-timing-function: ease;
   }
   .team-header5 {
-    top: 649px;
-    left: 62px;
+    top: 650px;
+    left: 37px;
     color: rgb(167, 135, 122);
     height: 31px;
     position: absolute;
@@ -391,8 +391,8 @@
     line-height: 108px;
   }
   .team-header6 {
-    top: 1109px;
-    left: 57px;
+    top: 1110px;
+    left: 32px;
     height: 35px;
     position: absolute;
     font-size: 15px;

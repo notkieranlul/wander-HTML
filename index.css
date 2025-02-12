@@ -498,7 +498,7 @@
   }
 }
  
-@media(max-width: 430px) {
+@media(max-width: 390px) {
   .home-header1 {
     overflow: hidden;
   }
