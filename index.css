@@ -533,8 +533,8 @@
     gap: var(--dl-space-space-unit);
   }
   .home-caption1 {
-    left: -58px;
-    bottom: -195px;
+    left: -72px;
+    bottom: -193px;
     font-size: 10px;
     line-height: 24px;
   }
@@ -543,8 +543,8 @@
     left: 36px;
   }
   .home-header2 {
-    top: 140px;
-    right: -12px;
+    top: 139px;
+    right: -1px;
     font-size: 30px;
   }
   .home-description1 {
