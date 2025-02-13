@@ -772,6 +772,12 @@
     font-weight: 200;
     line-height: 15px;
     padding-left: 0px;
+    animation-name: none;
+    animation-delay: 0s;
+    animation-duration: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
   }
   .home-text21 {
     font-style: normal;
@@ -788,6 +794,12 @@
     font-weight: 200;
     line-height: 15px;
     padding-left: 0px;
+    animation-name: slideInLeft;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
   }
   .home-text23 {
     font-style: normal;
@@ -804,6 +816,12 @@
     font-weight: 200;
     line-height: 15px;
     padding-left: 0px;
+    animation-name: slideInRight;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
   }
   .home-text25 {
     font-style: inherit;
