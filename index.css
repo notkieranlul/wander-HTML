@@ -751,13 +751,13 @@
   .home-image8 {
     left: 110px;
     width: 25px;
-    bottom: 20px;
+    bottom: 40px;
     position: absolute;
   }
   .home-image9 {
     left: 290px;
     width: 25px;
-    bottom: 20px;
+    bottom: 40px;
     position: absolute;
   }
   .home-header7 {
@@ -1006,11 +1006,11 @@
   }
   .home-image8 {
     left: 90px;
-    bottom: 56px;
+    bottom: 80px;
   }
   .home-image9 {
     left: 270px;
-    bottom: 56px;
+    bottom: 80px;
   }
   .home-header7 {
     top: 481px;
