@@ -665,7 +665,7 @@
   text-decoration: none;
 }
  
-@media(max-width: 390px) {
+@media(max-width: 391px) {
   .accordion {
     padding-top: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-oneandhalfunits);
