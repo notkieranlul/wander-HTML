@@ -84,7 +84,7 @@
   width: 267px;
   height: 73px;
   padding-left: var(--dl-space-space-oneandhalfunits);
-  padding-right: 21px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
  
@@ -617,10 +617,12 @@
     overflow: hidden;
   }
   .home-navlink2 {
-    top: 316px;
-    left: 108px;
-    width: 205px;
+    top: 315px;
+    left: 125px;
+    width: 169px;
+    height: 74px;
     position: absolute;
+    padding-top: 12px;
     padding-left: 19px;
     padding-right: 19px;
     animation-name: fadeInUp;
