@@ -978,15 +978,18 @@
   }
   .home-navlink2 {
     top: 310px;
-    left: 97px;
-    width: 205px;
+    left: 100px;
+    width: 185px;
+    height: 67px;
     position: absolute;
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-unit);
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
   }
   .home-header2 {
     top: 223px;
-    left: 229px;
+    left: 221px;
     width: 66px;
     height: auto;
     overflow: hidden;
@@ -995,7 +998,7 @@
   }
   .home-header3 {
     top: 60px;
-    left: 147px;
+    left: 140px;
     width: 89px;
     height: auto;
     font-size: 45px;
