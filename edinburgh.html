@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Edinburgh - wandr</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#marker {
+        background-image: url('/public/images/wander-logo1.png');
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .mapboxgl-popup {
+        max-width: 200px;
+    }
+</style>
+<link
+rel="shortcut icon"
+href="public/wander-logo1.png"
+type="icon/png"
+sizes="32x32"
+/>
+</head>
+<body>
+<div id="map"></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoia2VlenkiLCJhIjoiY20zcHNtb2xuMGZ6YjJzc2VvaHdleDJvbCJ9.8JkhFV0AYdyeP7xsi2SehA';
+    const leith = [-3.171088, 55.972644];
+    const newtown = [-3.199321, 55.955459];
+    const gorgie = [-3.237011, 55.937584];
+    const sighthill = [-3.286753, 55.922893];
+    const niddrie =[-3.118601, 55.933858];
+    const stockbridge = [-3.209914, 55.958353];
+    const bruntsfield = [-3.207081, 55.937129];
+    const marchmont = [-3.199225, 55.936214];
+    const newington = [-3.173344, 55.932915];
+    const bounds = [
+        [-3.4000, 55.8500], // Southwest coordinates
+        [-3.0000, 56.0500] // Northeast coordinates
+    ];
+
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/keezy/cm7395ncz01ex01sd6a526jh4', // style URL
+        center: [3.1883, 55.9533], // starting position
+        zoom: 12, // starting zoom
+        maxBounds: bounds, // Set the map's geographical boundaries.
+        pitch: 37,
+        maxZoom: 16,
+        antialias: true
+    });
+
+    map.on('style.load', () => {
+        // Insert the layer beneath any symbol layer.
+        const layers = map.getStyle().layers;
+        const labelLayerId = layers.find(
+            (layer) => layer.type === 'symbol' && layer.layout['text-field']
+        ).id;
+
+        // The 'building' layer in the Mapbox Streets
+        // vector tileset contains building height data
+        // from OpenStreetMap.
+        map.addLayer(
+            {
+                'id': 'add-3d-buildings',
+                'source': 'composite',
+                'source-layer': 'building',
+                'filter': ['==', 'extrude', 'true'],
+                'type': 'fill-extrusion',
+                'minzoom': 15,
+            },
+            labelLayerId
+        );
+    });
+
+        // create the popup for leith
+        const popup = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Leith: Crime Rate: High. Characteristics: Diverse area with a mix of residential and commercial properties. Common Crimes: Higher rates of violent crimes and property crimes.'
+    );
+
+    // create DOM element for the marker
+    const el = document.createElement('div');
+    el.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el)
+        .setLngLat(leith)
+        .setPopup(popup) // sets a popup on this marker
+        .addTo(map);
+
+
+        // create the popup for new town
+        const popup_newtown = new mapboxgl.Popup({ offset: 10 }).setText(
+        'City Centre: Crime Rate: High. Characteristics: Busy commercial area with a high density of shops, bars, and restaurants. Common Crimes: Violent crimes, thefts, and anti-social behavior.'
+    );
+
+    // create DOM element for the marker
+    const el2 = document.createElement('div');
+    el2.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el2)
+        .setLngLat(newtown)
+        .setPopup(popup_newtown) // sets a popup on this marker
+        .addTo(map);
+
+        // create the popup for gorgie
+        const popup_gorgie = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Gorgie: Crime Rate: High. Characteristics: Residential area with a mix of housing types. Common Crimes: Higher rates of property crimes and occasional violent crimes.'
+    );
+
+    // create DOM element for the marker
+    const el3 = document.createElement('div');
+    el3.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el3)
+        .setLngLat(gorgie)
+        .setPopup(popup_gorgie) // sets a popup on this marker
+        .addTo(map);
+
+        // create the popup for sighthill
+        const popup_sighthill = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Sighthill: Crime Rate: High. Characteristics: Residential area with a mix of housing types. Common Crimes: Higher rates of property crimes and occasional violent crimes.'
+    );
+
+    // create DOM element for the marker
+    const el5 = document.createElement('div');
+    el5.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el5)
+        .setLngLat(sighthill)
+        .setPopup(popup_sighthill) // sets a popup on this marker
+        .addTo(map);
+
+        // create the popup for niddrie
+        const popup_niddrie = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Niddrie: Crime Rate: High. Characteristics: Residential area with ongoing regeneration efforts. Common Crimes: Higher rates of violent crimes and anti-social behavior.'
+    );
+
+    // create DOM element for the marker
+    const el7 = document.createElement('div');
+    el7.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el7)
+        .setLngLat(niddrie)
+        .setPopup(popup_niddrie) // sets a popup on this marker
+        .addTo(map);
+
+
+        // create the popup for stockbridge
+        const popup_stockbridge = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Stockbridge: Crime Rate: Moderate. Characteristics: Popular residential area with a village feel, known for its markets and cafes. Common Crimes: Property crimes and occasional thefts.'
+    );
+
+    // create DOM element for the marker
+    const el4 = document.createElement('div');
+    el4.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el4)
+        .setLngLat(stockbridge)
+        .setPopup(popup_stockbridge) // sets a popup on this marker
+        .addTo(map);
+
+        // create the popup for bruntsfield
+        const popup_bruntsfield = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Bruntsfield: Crime Rate: Moderate. Characteristics: Residential area with a mix of families and students, known for its parks and cafes.Common Crimes: Property crimes and occasional burglaries.'
+    );
+
+    // create DOM element for the marker
+    const el6 = document.createElement('div');
+    el6.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el6)
+        .setLngLat(bruntsfield)
+        .setPopup(popup_bruntsfield) // sets a popup on this marker
+        .addTo(map);
+
+        // create the popup for marchmont
+        const popup_marchmont = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Marchmont: Crime Rate: Moderate. Characteristics: Residential area popular with students and families. Common Crimes: Property crimes and occasional thefts.'
+    );
+
+    // create DOM element for the marker
+    const el8 = document.createElement('div');
+    el8.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el8)
+        .setLngLat(marchmont)
+        .setPopup(popup_marchmont) // sets a popup on this marker
+        .addTo(map);
+
+        // create the popup for newington
+        const popup_newington = new mapboxgl.Popup({ offset: 10 }).setText(
+        'Marchmont: Crime Rate: Moderate. Characteristics: Residential area popular with students and families. Common Crimes: Property crimes and occasional thefts.'
+    );
+
+    // create DOM element for the marker
+    const el9 = document.createElement('div');
+    el9.id = 'marker';
+
+    // create the marker
+    new mapboxgl.Marker(el9)
+        .setLngLat(newington)
+        .setPopup(popup_newington) // sets a popup on this marker
+        .addTo(map);
+
+
+    // Add geolocate control to the map.
+    map.addControl(
+        new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            // When active the map will receive updates to the device's location as it changes.
+            trackUserLocation: true,
+            // Draw an arrow next to the location dot to indicate which direction the device is heading.
+            showUserHeading: true
+        })
+        
+    );
+    
+</script>
+
+</body>
+</html>
