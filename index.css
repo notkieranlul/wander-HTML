@@ -196,12 +196,6 @@
   object-fit: cover;
   visibility: hidden;
   border-radius: 20px;
-  animation-name: slideInRight;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
 }
  
 .home-image4 {
@@ -214,12 +208,6 @@
   object-fit: cover;
   visibility: hidden;
   border-radius: 20px;
-  animation-name: slideInLeft;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
 }
  
 .home-caption1 {
@@ -242,7 +230,7 @@
 }
  
 .home-caption2 {
-  top: 348px;
+  top: 359px;
   left: 360px;
   color: rgb(87, 52, 18);
   width: 387px;
