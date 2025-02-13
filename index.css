@@ -618,14 +618,15 @@
   }
   .home-navlink2 {
     top: 315px;
-    left: 125px;
-    width: 169px;
+    left: 105px;
+    width: 207px;
     height: 74px;
     position: absolute;
-    padding-top: 12px;
+    padding-top: 21px;
     padding-left: 19px;
     padding-right: 19px;
     animation-name: fadeInUp;
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
     animation-duration: 2s;
   }
   .home-header2 {
@@ -984,10 +985,10 @@
     width: 185px;
     height: 67px;
     position: absolute;
-    padding-top: 0px;
+    padding-top: 22px;
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 22px;
   }
   .home-header2 {
     top: 223px;
