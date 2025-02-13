@@ -135,6 +135,7 @@
   height: 450px;
   position: absolute;
   object-fit: cover;
+  border-radius: 20px;
   animation-name: slideInLeft;
   animation-delay: 0s;
   animation-duration: 2s;
@@ -173,6 +174,7 @@
   overflow: hidden;
   position: absolute;
   object-fit: cover;
+  border-radius: 20px;
   animation-name: slideInRight;
   animation-delay: 0s;
   animation-duration: 2s;
@@ -189,6 +191,7 @@
   overflow: hidden;
   position: absolute;
   object-fit: cover;
+  border-radius: 20px;
   animation-name: slideInLeft;
   animation-delay: 0s;
   animation-duration: 2s;
@@ -280,6 +283,7 @@
   height: 450px;
   position: absolute;
   object-fit: cover;
+  border-radius: 20px;
   animation-name: slideInRight;
   animation-delay: 0s;
   animation-duration: 2s;
@@ -414,9 +418,11 @@
   position: relative;
   max-width: 1440px;
   align-items: flex-start;
+  padding-top: 120px;
   padding-left: var(--dl-space-space-fiveunits);
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
 }
  
 .home-main {
@@ -536,8 +542,9 @@
     font-family: Poppins;
     font-weight: 700;
     line-height: 40px;
-    animation-name: slideInLeft;
+    animation-name: slideInRight;
     animation-delay: 0s;
+    animation-duration: 2s;
     animation-direction: normal;
     animation-timing-function: ease;
   }
@@ -552,6 +559,7 @@
     line-height: 40px;
     animation-name: slideInLeft;
     animation-delay: 0s;
+    animation-duration: 2s;
     animation-direction: normal;
     animation-timing-function: ease;
   }
@@ -562,8 +570,9 @@
     color: #a7877a;
   }
   .home-image11 {
-    top: -6px;
-    left: -95px;
+    top: 4px;
+    left: -94px;
+    height: 450px;
   }
   .home-header4 {
     top: 509px;
@@ -635,10 +644,10 @@
     padding-bottom: 0px;
   }
   .home-video {
-    top: 111px;
-    left: 37px;
-    width: 357px;
-    height: 195px;
+    top: 112px;
+    left: 31px;
+    width: 370px;
+    height: 208px;
     overflow: hidden;
     position: absolute;
     border-radius: 20px;
