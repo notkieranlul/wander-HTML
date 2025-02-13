@@ -164,18 +164,6 @@
   animation-timing-function: ease;
 }
  
-.home-text13 {
-  color: #573412;
-}
- 
-.home-text15 {
-  color: #a7877a;
-}
- 
-.home-text16 {
-  color: #573412;
-}
- 
 .home-image12 {
   right: -146px;
   width: 615px;
@@ -344,28 +332,6 @@
 }
  
 .home-header6 {
-  top: 194px;
-  left: var(--dl-space-space-unit);
-  color: rgb(255, 255, 255);
-  right: var(--dl-space-space-unit);
-  width: auto;
-  position: absolute;
-  font-size: 50px;
-  max-width: auto;
-  font-style: normal;
-  text-align: center;
-  font-family: "Poppins";
-  font-weight: 600;
-  line-height: 108px;
-  animation-name: fadeInDown;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-}
- 
-.home-header7 {
   top: 803px;
   left: 450px;
   color: rgb(255, 255, 255);
@@ -416,6 +382,28 @@
   width: 200px;
   object-fit: cover;
   text-decoration: none;
+}
+ 
+.home-header7 {
+  top: 194px;
+  left: var(--dl-space-space-unit);
+  color: rgb(255, 255, 255);
+  right: var(--dl-space-space-unit);
+  width: auto;
+  position: absolute;
+  font-size: 50px;
+  max-width: auto;
+  font-style: normal;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 108px;
+  animation-name: fadeInDown;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
  
 .home-footer {
@@ -583,6 +571,12 @@
     font-size: 30px;
     font-family: Poppins;
   }
+  .home-text13 {
+    color: #573412;
+  }
+  .home-text15 {
+    color: #a7877a;
+  }
   .home-image12 {
     right: -77px;
     width: 317px;
@@ -660,23 +654,6 @@
     line-height: 108px;
   }
   .home-header6 {
-    top: 428px;
-    left: 25px;
-    width: 378px;
-    position: absolute;
-    font-size: 30px;
-    font-family: Poppins;
-  }
-  .home-text17 {
-    color: #573412;
-  }
-  .home-text18 {
-    color: #a7877a;
-  }
-  .home-text19 {
-    color: #573412;
-  }
-  .home-header7 {
     top: 1px;
     left: 26px;
     width: auto;
@@ -686,7 +663,7 @@
     font-family: Poppins;
     line-height: 40px;
   }
-  .home-text20 {
+  .home-text16 {
     color: #573412;
   }
   .home-image15 {
@@ -716,6 +693,21 @@
     width: 25px;
     bottom: 45px;
     position: absolute;
+  }
+  .home-header7 {
+    top: 419px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin: auto;
+    font-size: 30px;
+    font-family: Poppins;
+  }
+  .home-text18 {
+    color: #573412;
+  }
+  .home-text20 {
+    color: #a7877a;
   }
   .home-footer {
     overflow: hidden;
@@ -792,7 +784,7 @@
   .home-image14 {
     overflow: hidden;
   }
-  .home-header6 {
+  .home-header7 {
     top: 5px;
     right: 56px;
   }
