@@ -6,8 +6,10 @@
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
 <style>
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+body { margin: 0; padding: 0; background-color: #eae7e2;}
+img {width: 32px; height: 32px; display: block;   margin-left: auto; margin-right: auto; margin-top: 0.5%;}
+@media(max-width: 430px) { img {width: 32px; height: 32px; display: block;   margin-left: auto; margin-right: auto; margin-top: 2%;}}
+#map { position: absolute; top: 50px; bottom: 0; width: 100%; }
 #marker {
         background-image: url('/public/images/wander-logo1.png');
         background-size: cover;
@@ -28,6 +30,7 @@ sizes="32x32"
 />
 </head>
 <body>
+<a href="/index.html"><img src="/public/images/wander-logo1.png"></a>
 <div id="map"></div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1Ijoia2VlenkiLCJhIjoiY20zcHNtb2xuMGZ6YjJzc2VvaHdleDJvbCJ9.8JkhFV0AYdyeP7xsi2SehA';
