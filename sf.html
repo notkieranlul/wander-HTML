@@ -7,9 +7,10 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; background-color: #eae7e2; }
-img {width: 32px; height: 32px; display: block;   margin-left: auto; margin-right: auto; margin-top: 0.5%;}
-@media(max-width: 430px) { img {width: 32px; height: 32px; display: block;   margin-left: auto; margin-right: auto; margin-top: 2%;}}
+img {width: 32px; height: 32px; display: block; margin-left: auto; margin-right: auto; margin-top: 0.5%;}
+@media(max-width: 430px) { img {width: 32px; height: 32px; display: block; margin-left: 5%; margin-top: 3%;}}
 #map { position: absolute; top: 50px; bottom: 0; width: 100%; }
+@media(max-width: 430px) { #map { position: absolute; top: 60px; bottom: 0; width: 100%;}}
 #marker {
         background-image: url('/public/images/wander-logo1.png');
         background-size: cover;
@@ -31,6 +32,22 @@ sizes="32x32"
 </head>
 <body>
 <a href="/index.html"><img src="/public/images/wander-logo1.png"></a>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="map.css" type="text/css">
+<style>
+    .geocoder {
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+        left: 50%;
+        margin-left: -25%;
+        top: 7px;
+    }
+    .mapboxgl-ctrl-geocoder {
+        min-width: 100%;
+    }
+</style>
+<div id="geocoder" class="geocoder"></div>
 <div id="map"></div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1Ijoia2VlenkiLCJhIjoiY20zcHNtb2xuMGZ6YjJzc2VvaHdleDJvbCJ9.8JkhFV0AYdyeP7xsi2SehA';
@@ -49,9 +66,8 @@ sizes="32x32"
         container: 'map', // container ID
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
         style: 'mapbox://styles/keezy/cm6wgc2q200jo01saevaqbvy0', // style URL
-        center: [-122.433247, 37.742646], // starting position
-        zoom: 12, // starting zoom
-        maxBounds: bounds, // Set the map's geographical boundaries.
+        center: [-122.009168, 37.333072], // starting position
+        zoom: 20, // starting zoom
         pitch: 37,
         maxZoom: 16,
         antialias: true
@@ -172,6 +188,14 @@ sizes="32x32"
         .setLngLat(noe)
         .setPopup(popup_noe) // sets a popup on this marker
         .addTo(map);
+
+            // Add the control to the map.
+    const geocoder = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl
+    });
+
+    document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
 
     // Add geolocate control to the map.
