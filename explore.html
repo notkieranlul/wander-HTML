@@ -7,47 +7,31 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; background-color: #eae7e2; }
-img {width: 32px; height: 32px; margin-left: 3%; margin-top: 0.5%;}
-@media(max-width: 430px) { img {width: 32px; height: 32px; display: block; margin-left: 5%; margin-top: 3.5%;}}
-@media(max-width: 390px) { img {width: 32px; height: 32px; display: block; margin-left: 5%; margin-top: 4.5%;}}
+#images
+.left {width: 32px; height: 32px; margin-left: 3%; margin-top: 0.5%;}
+.right {width: 32px; height: 32px; margin-left: 91%; margin-top: 0.5%;}
+@media(max-width: 430px) { #images .left {width: 32px; height: 32px; margin-left: 5%; margin-top: 3.5%;}}
+@media(max-width: 430px) { #images .right {width: 32px; height: 32px; margin-left: 75%;}}
+@media(max-width: 390px) { #images .left {width: 32px; height: 32px; margin-left: 5%; margin-top: 3.5%;}}
+@media(max-width: 390px) { #images .right {width: 32px; height: 32px; margin-left: 73%;}}
 #map { position: absolute; top: 50px; bottom: 0; width: 100%; }
 @media(max-width: 430px) { #map { position: absolute; top: 60px; bottom: 0; width: 100%;}}
 @media(max-width: 390px) { #map { position: absolute; top: 65px; bottom: 0; width: 100%;}}
-#marker {
-        background-image: url('/public/images/wander-logo1.png');
-        background-size: cover;
-        width: 25px;
-        height: 25px;
-        cursor: pointer;
-    }
-
-    .mapboxgl-popup {
-        max-width: 200px;
-    }
+#marker {background-image: url('/public/images/wander-logo1.png');background-size: cover;width: 25px;height: 25px;cursor: pointer;}
+.mapboxgl-popup { max-width: 200px;}
 </style>
-<link
-rel="shortcut icon"
-href="public/wander-logo1.png"
-type="icon/png"
-sizes="32x32"
-/>
+<link rel="shortcut icon" href="public/wander-logo1.png" type="icon/png"sizes="32x32"/>
 </head>
 <body>
-<a href="/index.html"><img src="/public/images/wander-logo1.png"></a>
+<div id="images">
+<a href="/index.html"><img src="/public/images/wander-logo1.png" class="image left"></a>
+<img src="/public/Icons/3d.svg" class="image right" id="3d-image">
+</div>
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet" href="explore.css" type="text/css">
 <style>
-    .geocoder {
-        position: absolute;
-        z-index: 1;
-        width: 50%;
-        left: 50%;
-        margin-left: -25%;
-        top: 7px;
-    }
-    .mapboxgl-ctrl-geocoder {
-        min-width: 100%;
-    }
+.geocoder {position: absolute;z-index: 1;width: 50%;left: 50%;margin-left: -25%;top: 7px;}
+.mapboxgl-ctrl-geocoder {min-width: 100%;}
 </style>
 <div id="geocoder" class="geocoder"></div>
 <div id="map"></div>
@@ -81,7 +65,8 @@ sizes="32x32"
         zoom: 15, // starting zoom
         pitch: 37,
         maxZoom: 16,
-        antialias: true
+        antialias: true,
+        localIdeographFontFamily: "'Noto Sans', 'Noto Sans CJK SC', sans-serif"
     });
 
     map.on('style.load', () => {
@@ -106,7 +91,23 @@ sizes="32x32"
             labelLayerId
         );
     });
+    
+    let is3D = true; // Variable to track the current pitch state
 
+document.getElementById('3d-image').addEventListener('click', () => {
+    if (is3D) {
+        map.flyTo({
+            pitch: 0, // Reset pitch to 0
+            essential: true
+        });
+    } else {
+        map.flyTo({
+            pitch: 37, // Set pitch to 37
+            essential: true
+        });
+    }
+    is3D = !is3D; // Toggle the pitch state
+});
 
         // create the popup for tenderloin
         const popup = new mapboxgl.Popup({ offset: 10 }).setText(
@@ -340,15 +341,12 @@ sizes="32x32"
 
 
 
-
-
-
             // Add the control to the map.
     const geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
         marker: {
-        color: '#573412'
+        color: '#573412',
       },
     });
 
