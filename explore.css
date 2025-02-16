@@ -291,7 +291,6 @@
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
 #continue-button {
   margin-top: 20px;
@@ -301,6 +300,5 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
 }
 }
