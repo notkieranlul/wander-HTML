@@ -59,10 +59,6 @@ body { margin: 0; padding: 0; background-color: #eae7e2; }
     const bruntsfield = [-3.207081, 55.937129];
     const marchmont = [-3.199225, 55.936214];
     const newington = [-3.173344, 55.932915];
-    const bounds = [
-        [-122.66336, 37.492987], // Southwest coordinates
-        [-122.250481, 37.871651] // Northeast coordinates
-    ];
 
     const map = new mapboxgl.Map({
         container: 'map', // container ID
@@ -75,6 +71,7 @@ body { margin: 0; padding: 0; background-color: #eae7e2; }
         antialias: true,
         localIdeographFontFamily: "'Noto Sans', 'Noto Sans CJK SC', sans-serif"
     });
+
 
     let is3D = true; // Variable to track the current pitch state
 
@@ -104,6 +101,8 @@ document.getElementById('3d-image').addEventListener('click', () => {
     isSatellite = !isSatellite; // Toggle the style state
 });
 </script>
+
+
 
 <script src="sf-pin.js"></script>
 <script src="edinburgh-pin.js"></script>
