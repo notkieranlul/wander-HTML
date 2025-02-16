@@ -9,11 +9,14 @@
 body { margin: 0; padding: 0; background-color: #eae7e2; }
 #images
 .left {width: 32px; height: 32px; margin-left: 3%; margin-top: 0.5%;}
-.right {width: 32px; height: 32px; margin-left: 91%; margin-top: 0.5%;}
+.right {width: 32px; height: 32px; margin-left: 1%; margin-top: 0.5%;}
+.pitch {width: 32px; height: 32px; margin-left: 88%; margin-top: 0.5%;}
 @media(max-width: 430px) { #images .left {width: 32px; height: 32px; margin-left: 5%; margin-top: 3.5%;}}
-@media(max-width: 430px) { #images .right {width: 32px; height: 32px; margin-left: 75%;}}
-@media(max-width: 390px) { #images .left {width: 32px; height: 32px; margin-left: 5%; margin-top: 3.5%;}}
-@media(max-width: 390px) { #images .right {width: 32px; height: 32px; margin-left: 73%;}}
+@media(max-width: 430px) { #images .right {width: 32px; height: 32px; margin-left: 1%;}}
+@media(max-width: 430px) { #images .pitch {width: 32px; height: 32px; margin-left: 66%;}}
+@media(max-width: 390px) { #images .left {width: 32px; height: 32px; margin-left: 5%; margin-top: 4%;}}
+@media(max-width: 390px) { #images .right {width: 32px; height: 32px; margin-left: 1%;}}
+@media(max-width: 390px) { #images .pitch {width: 32px; height: 32px; margin-left: 65%;}}
 #map { position: absolute; top: 50px; bottom: 0; width: 100%; }
 @media(max-width: 430px) { #map { position: absolute; top: 60px; bottom: 0; width: 100%;}}
 @media(max-width: 390px) { #map { position: absolute; top: 65px; bottom: 0; width: 100%;}}
@@ -25,6 +28,7 @@ body { margin: 0; padding: 0; background-color: #eae7e2; }
 <body>
 <div id="images">
 <a href="/index.html"><img src="/public/images/wander-logo1.png" class="image left"></a>
+<img src="/public/Icons/3d.svg" class="pitch" id="3d-image">
 <img src="/public/Icons/earth.svg" class="image right" id="earth-image">
 </div>
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
@@ -64,7 +68,7 @@ body { margin: 0; padding: 0; background-color: #eae7e2; }
         center: [-122.009168, 37.333072], // starting position
         zoom: 15, // starting zoom
         pitch: 37,
-        maxZoom: 16,
+        maxZoom: 25,
         antialias: true,
         localIdeographFontFamily: "'Noto Sans', 'Noto Sans CJK SC', sans-serif"
     });
@@ -91,6 +95,23 @@ body { margin: 0; padding: 0; background-color: #eae7e2; }
             labelLayerId
         );
     });
+
+    let is3D = true; // Variable to track the current pitch state
+
+document.getElementById('3d-image').addEventListener('click', () => {
+    if (is3D) {
+        map.flyTo({
+            pitch: 0, // Reset pitch to 0
+            essential: true
+        });
+    } else {
+        map.flyTo({
+            pitch: 37, // Set pitch to 37
+            essential: true
+        });
+    }
+    is3D = !is3D; // Toggle the pitch state
+});
     
     let isSatellite = false; // Variable to track the current map style
 
