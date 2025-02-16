@@ -4,6 +4,7 @@
 <title>explore - wandr</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
 <style>
 body { margin: 0; padding: 0; background-color: #eae7e2; }
@@ -34,6 +35,15 @@ body { margin: 0; padding: 0; background-color: #eae7e2; }
 <img src="/public/Icons/3d.svg" class="pitch" id="3d-image">
 <img src="/public/Icons/earth.svg" class="image right" id="earth-image">
 </div>
+
+<!-- Add the message box -->
+<div id="message-box">
+    <div id="message-content">
+        <p>Welcome to Wandr! Please click the button below to continue.</p>
+        <button id="continue-button">acknowledge</button>
+    </div>
+</div>
+
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet" href="explore.css" type="text/css">
 <style>
@@ -102,11 +112,15 @@ document.getElementById('3d-image').addEventListener('click', () => {
 });
 </script>
 
-
-
 <script src="sf-pin.js"></script>
 <script src="edinburgh-pin.js"></script>
 
+<script>
+    // Add event listener to the continue button
+document.getElementById('continue-button').addEventListener('click', function() {
+    document.getElementById('message-box').style.display = 'none';
+});
+</script>
 
 <script>
             // Add the control to the map.
@@ -119,7 +133,6 @@ document.getElementById('3d-image').addEventListener('click', () => {
     });
 
     document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
-
 
     // Add geolocate control to the map.
     map.addControl(
