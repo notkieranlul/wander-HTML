@@ -6,6 +6,37 @@
   box-sizing: border-box;
 }
 
+/* Add styles for the message box */
+#message-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#message-content {
+  background-color: #eae7e2;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+#continue-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #573412;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
 .mapboxgl-ctrl-geocoder {
   font-size: 18px;
   line-height: 24px;
@@ -272,33 +303,4 @@
   .mapboxgl-ctrl-geocoder--powered-by {
     font-size: 11px !important;
   }
-
-/* Add styles for the message box */
-#message-box {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-#message-content {
-  background-color: #eae7e2;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-#continue-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #573412;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 }
